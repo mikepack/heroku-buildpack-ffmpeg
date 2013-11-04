@@ -4,10 +4,10 @@ indent() {
   sed -u 's/^/       /'
 }
 
-echo "-----> Install ffmpeg"
+echo "-----> Install ffmpeg (from static binary)"
 BUILD_DIR=$1
-VENDOR_DIR="vendor"
-DOWNLOAD_URL="http://flect.github.io/heroku-binaries/libs/ffmpeg.tar.gz"
+VENDOR_DIR="vendor/ffmpeg/bin"
+DOWNLOAD_URL="http://ffmpeg.gusari.org/static/64bit/ffmpeg.static.64bit.2013-11-04.tar.gz"
 
 echo "DOWNLOAD_URL = " $DOWNLOAD_URL | indent
 
